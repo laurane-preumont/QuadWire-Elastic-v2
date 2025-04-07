@@ -1,0 +1,6 @@
+
+__pycache__/
+
+.idea/
+
+thermal_data/fake_data/
