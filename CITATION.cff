@@ -2,16 +2,16 @@ cff-version: 1.2.0
 authors:
   - family-names: Preumont
     given-names: Laurane
-    orcid: 
+    orcid: 0009-0008-1281-7153
   - family-names: Viano
     given-names: Rafael
-    orcid: 
+    orcid: 0000-0002-1537-2443
   - family-names: Margerit
     given-names: Pierre
-    orcid: 
+    orcid: 0000-0003-4922-9837
 title: "QuadWire"
 url: https://github.com/laurane-preumont/QuadWire-Elastic-v2
-doi:
+doi: 10.5281/zenodo.15167045
 
 
 
