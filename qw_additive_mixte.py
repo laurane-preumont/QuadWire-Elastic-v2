@@ -10,8 +10,7 @@ Tout le fonctionnement de qwa.additive a été recopié dans des fonctions local
 et surtout être plus fexible pour intégrer la boucle sur la naissance de couches.
 
 Ces fonctions recopiées doivent donner exactement la meme chose que qwa.additive si elles sont utilisées de la meme facon,
-c'est ce qui est fait dans 'additive_classic'.  additive_classic et additive sont quasiment identiques (erreurs < 0.4% d'après la comparaison compare_dicts_with_sparse(results_v1, results_v2) dans debug_mixte.py)
-
+c'est ce qui est fait dans 'additive_classic'.
 """
 #%% Imports
 import time

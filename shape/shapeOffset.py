@@ -85,6 +85,7 @@ def mesh_offset(meshing, offset, X, Elems):
 
 
 def generate_trajectory(meshing, offset):
+    ''' generate trajectory with given offset '''
     X, Elems, U0 = mesh.generate_trajectory(meshing)
     X = mesh_offset(meshing, offset, X, Elems)
     return X, Elems, U0

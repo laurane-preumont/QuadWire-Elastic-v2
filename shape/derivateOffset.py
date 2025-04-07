@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 import qw_additive
 from modules import mesh, fem, weld, behavior, plot
-from shape import shapeOptim, shapeOffset, splitBeads
+from shape import shapeOffset, shapeOptim_module
 
 
 # %% Copy/Paste qw_structure with specific returns.
@@ -713,7 +713,7 @@ def finDiff_offset2uslike(meshing, offset, loading, discretization, material, ep
     offset_epsilon_i = offset_epsilon(meshing, offset, epsilon, i)
     U_epsilon_i, us_epsilon_i, yKy_epsilon_i, Assemble_epsilon_i, Y_epsilon_i, yfbc_epsilon_i, X_epsilon_i, Elems_epsilon_i = shape_structure(meshing, offset, loading, discretization, material)
 
-    offset2uslike = shapeOptim.offset2uslike(meshing, offset, Y, Assemble)
-    offset2uslike_epsilon_i = shapeOptim.offset2uslike(meshing, offset_epsilon_i, Y_epsilon_i, Assemble_epsilon_i)
+    offset2uslike = shapeOptim_module.offset2uslike(meshing, offset, Y, Assemble)
+    offset2uslike_epsilon_i = shapeOptim_module.offset2uslike(meshing, offset_epsilon_i, Y_epsilon_i, Assemble_epsilon_i)
     offset2uslike_i = (offset2uslike_epsilon_i - offset2uslike) / epsilon
     return offset2uslike_i
