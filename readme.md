@@ -170,8 +170,14 @@ Make sure to install:
 ## Credits
 This code is a working version forked from QuadWire-Elastic initial version published along the seminal paper and first QuadWire article
 ``QuadWire: an extended one dimensional model for efficient mechanical simulations of bead-based additive manufacturing processes'' (hal-04609753)(https://doi.org/10.1016/j.cma.2024.117010)
+
 published on Zenodo as 10.5281/zenodo.10822308 from rafaelviano/QuadWire-Elastic
+
+
 This new v2 version includes analytical thermal generation,
+
 mesh improvements (massive 3D geometries (instead of carpets and thinwalls), zigzag trajectories),
+
 bead offset control and extended kinematic conditions (straddle beads and overhang beads),
-shape optimization capabilities (shape/shapeOptim_module).
+
+shape optimization capabilities (shape/shapeOptim_module and test/optim-test).
