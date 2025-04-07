@@ -9,7 +9,7 @@ The codebase also includes shape optimization capabilities using gradient descen
 ## Code Structure
 
 The project is organized into several modules:
-
+```
 ├── qw_structure.py        # Complete structure loading simulation
 ├── qw_additive.py         # Element-wise additive loading simulation
 ├── qw_additive_mixte.py   # Layer-wise + element additive simulation
@@ -33,7 +33,7 @@ The project is organized into several modules:
 
 └── tests/                 # draft files
     ├── ...             # test files are used to check computations
-
+```
 
 ---
 
@@ -78,9 +78,8 @@ Main features:
   - Plasticity criteria  
   - Multi-scale homogenization
 
-- **`forces.py`**: Force computations  
+- **`forces.py`**: compute QuadWire forces 
   - Internal forces  
-  - 3D stress tensor  
   - Draft delamination models
 
 ### Manufacturing Process
