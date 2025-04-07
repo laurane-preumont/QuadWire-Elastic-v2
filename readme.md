@@ -9,7 +9,7 @@ The codebase also includes shape optimization capabilities using gradient descen
 ## Code Structure
 
 The project is organized into several modules:
-
+```
 ├── qw_structure.py        # Complete structure loading simulation
 ├── qw_additive.py         # Element-wise additive loading simulation
 ├── qw_additive_mixte.py   # Layer-wise + element additive simulation
@@ -33,7 +33,7 @@ The project is organized into several modules:
 
 └── tests/                 # draft files
     ├── ...             # test files are used to check computations
-
+```
 
 ---
 
@@ -78,9 +78,8 @@ Main features:
   - Plasticity criteria  
   - Multi-scale homogenization
 
-- **`forces.py`**: Force computations  
+- **`forces.py`**: compute QuadWire forces 
   - Internal forces  
-  - 3D stress tensor  
   - Draft delamination models
 
 ### Manufacturing Process
@@ -171,8 +170,14 @@ Make sure to install:
 ## Credits
 This code is a working version forked from QuadWire-Elastic initial version published along the seminal paper and first QuadWire article
 ``QuadWire: an extended one dimensional model for efficient mechanical simulations of bead-based additive manufacturing processes'' (hal-04609753)(https://doi.org/10.1016/j.cma.2024.117010)
+
 published on Zenodo as 10.5281/zenodo.10822308 from rafaelviano/QuadWire-Elastic
+
+
 This new v2 version includes analytical thermal generation,
+
 mesh improvements (massive 3D geometries (instead of carpets and thinwalls), zigzag trajectories),
+
 bead offset control and extended kinematic conditions (straddle beads and overhang beads),
-shape optimization capabilities (shape/shapeOptim_module).
+
+shape optimization capabilities (shape/shapeOptim_module and test/optim-test).
